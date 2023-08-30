@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <div class="loader_bg">
+        <svg class="gegga">
+            <defs>
+                <filter id="gegga">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10"
+                        result="inreGegga"></feColorMatrix>
+                    <feComposite in="SourceGraphic" in2="inreGegga" operator="atop"></feComposite>
+                </filter>
+            </defs>
+        </svg>
+        <svg class="snurra" width="200" height="200" viewBox="0 0 200 200">
+            <defs>
+                <linearGradient id="linjärGradient">
+                    <stop class="stopp1" offset="0"></stop>
+                    <stop class="stopp2" offset="1"></stop>
+                </linearGradient>
+                <linearGradient y2="160" x2="160" y1="40" x1="40" gradientUnits="userSpaceOnUse" id="gradient"
+                    xlink:href="#linjärGradient"></linearGradient>
+            </defs>
+            <path class="halvan"
+                d="m 164,100 c 0,-35.346224 -28.65378,-64 -64,-64 -35.346224,0 -64,28.653776 -64,64 0,35.34622 28.653776,64 64,64 35.34622,0 64,-26.21502 64,-64 0,-37.784981 -26.92058,-64 -64,-64 -37.079421,0 -65.267479,26.922736 -64,64 1.267479,37.07726 26.703171,65.05317 64,64 37.29683,-1.05317 64,-64 64,-64">
+            </path>
+            <circle class="strecken" cx="100" cy="100" r="64"></circle>
+        </svg>
+        <svg class="skugga" width="200" height="200" viewBox="0 0 200 200">
+            <path class="halvan"
+                d="m 164,100 c 0,-35.346224 -28.65378,-64 -64,-64 -35.346224,0 -64,28.653776 -64,64 0,35.34622 28.653776,64 64,64 35.34622,0 64,-26.21502 64,-64 0,-37.784981 -26.92058,-64 -64,-64 -37.079421,0 -65.267479,26.922736 -64,64 1.267479,37.07726 26.703171,65.05317 64,64 37.29683,-1.05317 64,-64 64,-64">
+            </path>
+            <circle class="strecken" cx="100" cy="100" r="64"></circle>
+        </svg>
+    </div>
+
+
+
+    <!-- ------------------------------------------- -->
+    <div class="admin-panel clearfix">
+
+        <div class="slidebar">
+            <div class="logo">
+                <a href=""></a>
+            </div>
+
+            <ul><br>
+                <li><a href="#dashboard" id="targeted">dashboard</a></li><br>
+                <li><a href="#posts">Quiz</a></li><br>
+                <li><a href="#media">Homework</a></li><br>
+                <li><a href="#pages">Github EE</a></li><br>
+                <li><a href="#links">EE-204</a></li><br>
+                <li><a href="#comments">EE-224</a></li><br>
+                <li><a href="#widgets">EE-229</a></li><br>
+                <li><a href="#plugins">EE-325</a></li><br>
+                <li><a href="#users">EC-101</a></li><br>
+                <li><a href="#tools">EE-214</a></li><br>
+                <li><a href="https://portal.iitb.ac.in/asc/Login">IITB External</a></li><br>
+                <li><a href="https://asc.iitb.ac.in/acadmenu/">IITB Internal</a></li><br>
+                <li><a href="#settings">settings</a></li><br>
+            </ul>
+        </div>
+        <div class="main">
+            <ul class="navbar clearfix">
+                <li><a href="https://www.iitb.ac.in/en/unit-category/electrical-engineering">EE Department</a></li>
+                <li><a href="https://asc.iitb.ac.in/acadmenu/">Internal</a></li>
+                <li><a href="https://portal.iitb.ac.in/asc/Login">ASC</a></li>
+                <li><a href="https://resobin.gymkhana.iitb.ac.in/">Resobin</a></li>
+                <li><a href="https://moodle.iitb.ac.in/login/index.php">Moodle</a></li>
+            </ul>
+
+
+            <div class="mainContent clearfix">
+
+                <div id="dashboard">
+                    <h2 class="header"><span class="icon"></span>Dashboard</h2>
+                    <div class="monitor">
+                        <h4>Quiz Schedule --> Quiz </h4>
+                        <div class="clearfix">
+                            <ul class="content">
+                                <li>content</li>
+                                <li class="posts"><span class="count">179</span><a href="">posts</a></li>
+                                <li class="pages"><span class="count">13</span><a href="">pages</a></li>
+                                <li class="categories"><span class="count">21</span><a href="">categories</a></li>
+                                <li class="tags"><span class="count">305</span><a href="">tags</a></li>
+                            </ul>
+                            <ul class="discussions">
+                                <li>discussions</li>
+                                <li class="comments"><span class="count">353</span><a href="">comments</a></li>
+                                <li class="approved"><span class="count">319</span><a href="">approved</a></li>
+                                <li class="pending"><span class="count">0</span><a href="">pending</a></li>
+                                <li class="spam"><span class="count">34</span><a href="">spam</a></li>
+                            </ul>
+                        </div>
+                        <p>NXT<a href="">=>Ares</a> Developers <a href="">Dimension</a></p>
+                    </div>
+                    <div class="quick-press">
+                        <h4>Quick Mail</h4>
+                        <form action="" method="post">
+                            <input type="text" name="title" placeholder="Title" />
+                            <input type="text" name="content" placeholder="Content" />
+                            <input type="text" name="tags" placeholder="Tags" />
+                            <button type="button" class="save">l</button>
+                            <button type="button" class="delet">m</button>
+                            <button type="submit" class="submit" name="submit">Publish</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="posts" class="posts">
+                    <h2 class="header">QUIZ SCHEDULE</h2>
+                    <br>
+                    <ul>
+                        <li>
+                            <div class="card">
+                                <div class="main-content">
+                                    <div class="header"> <span>Quiz on</span> <span>29-June-2023</span> </div>
+                                    <p class="heading">EE-204 Analog quiz on Friday</p>
+                                    <div class="categories"> <span>Medium</span> <span>Books Available</span> </div>
+                                </div>
+                                <div class="footer"> by Class Representative </div>
+                            </div>
+                        </li>
+                        <br>
+                        <li>
+                            <div class="card">
+                                <div class="main-content">
+                                    <div class="header"> <span>Quiz on</span> <span>9 September</span> </div>
+                                    <p class="heading">EE-325 Probability quiz on 9 September</p>
+                                    <div class="categories"> <span>Hard</span> <span>Books Available</span> </div>
+                                </div>
+                                <div class="footer"> by Class Representative </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div id="media" class="media">
+                    <h2 class="header">Homework</h2>
+                    <br>
+                    <ul>
+                        <li>
+                            <div class="card">
+                                <div class="main-content">
+                                    <div class="header"> <span>Submission on</span> <span>29-June-2023</span> </div>
+                                    <p class="heading">EE-204 Analog submission on Friday</p>
+                                    <div class="categories"> <span>Medium</span> <span>Books Available</span> </div>
+                                </div>
+                                <div class="footer"> by Class Representative </div>
+                            </div>
+                        </li>
+                        <br>
+                        <li>
+                            <div class="card">
+                                <div class="main-content">
+                                    <div class="header"> <span>Submission on</span> <span>9 September</span> </div>
+                                    <p class="heading">EE-214 Report submission on Friday</p>
+                                    <div class="categories"> <span>Hard</span> <span>Books Available</span> </div>
+                                </div>
+                                <div class="footer"> by Class Representative </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="pages">
+                    <h2 class="header">GitHub Links</h2>
+                </div>
+                <div id="links">
+                    <h2 class="header">links</h2>
+                </div>
+                <div id="comments">
+                    <h2 class="header">comments</h2>
+                </div>
+                <div id="widgets">
+                    <h2 class="header">widgets</h2>
+                </div>
+                <div id="plugins">
+                    <h2 class="header">plugins</h2>
+                </div>
+                <div id="users">
+                    <h2 class="header">users</h2>
+                </div>
+                <div id="tools">
+                    <h2 class="header">Internal Portal IITB</h2>
+                </div>
+                <div id="settings">
+                    <h2 class="header">settings</h2>
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <ul class="statusbar">
+
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li class="profiles-setting"><a href="">CLR</a></li>
+                <li class="logout"><a href=""></a></li>
+                <br>
+            </ul>
+        </div>
+    </div>
+    <!-- ------------------------------------------- -->
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function () {
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/aa95071b26.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
